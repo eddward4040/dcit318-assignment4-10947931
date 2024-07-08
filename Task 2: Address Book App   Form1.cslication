@@ -1,0 +1,20 @@
+namespace AddressBook
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string name = txtName.Text;
+            string email = txtEmail.Text;
+            string phone = txtPhone.Text;
+
+            // Save the data to a database or file
+            MessageBox.Show("Data saved successfully!");
+        }
+    }
+}
